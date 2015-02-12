@@ -1,3 +1,3 @@
 # selfie
 
-a [Sails](http://sailsjs.org) application
+A PoC for a selfie app.
