@@ -1,3 +1,6 @@
 <% for(var i=0; i<selfies.length; i++) { %>
-  <img src="<%= selfies[i] %>" style="max-width: 100%" />
+  <p>
+    <h2><%= selfies[i].createdAt %></h2>
+    <img src="<%= selfies[i].imageData %>" style="max-width: 100%" />
+  </p>
 <% } %>
