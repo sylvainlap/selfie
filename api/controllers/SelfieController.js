@@ -6,6 +6,16 @@
  */
 
 module.exports = {
-	
-};
 
+	getAll: function(req, res) {
+		Selfie.find().exec(function(err, selfies) {
+			if (err) {
+				sails.log('erreur...');
+				return res.json(err);
+			}
+
+			return res.view('selfies', { selfies: selfies });
+		});
+	}
+
+};
